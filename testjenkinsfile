@@ -4,7 +4,7 @@ pipeline {
 
     stages {
         stage('Dep install') {
-            agent { docker { image 'node:14'}}
+            agent { docker { image 'nodejs'}}
             steps {
                 sh 'sudo cat /etc/os-release'
                 sh 'exit'
