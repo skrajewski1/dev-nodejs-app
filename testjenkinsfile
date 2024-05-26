@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Dep install')
             steps{
-            sh 'npm install'
+                sh 'npm install'
         }
     }
 }
