@@ -7,8 +7,8 @@ pipeline {
             agent { docker { image 'nodejs'
                 args '-u root:sudo' }}
             steps {
-                sh 'npm cache clean'
-                sh 'sudo chown -R 995:993 "/.npm"'
+                //sh 'npm cache clean'
+                //sh 'sudo chown -R 995:993 "/.npm"'
                 sh 'npm install'
             }
         }
